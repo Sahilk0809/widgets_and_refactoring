@@ -1,16 +1,5 @@
-# widgets_and_refactoring
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src = "https://github.com/Sahilk0809/widgets_and_refactoring/assets/149374235/bc40f355-0b37-4562-9e17-7ef02573e9ab" heigth=65% width=22%>
+<br>
+<img src = "https://github.com/Sahilk0809/widgets_and_refactoring/assets/149374235/d049aa1a-7699-43a7-82b2-658cadf22c9a" heigth=65% width=22%>
+<br>
+<img src = "https://github.com/Sahilk0809/widgets_and_refactoring/assets/149374235/defdcf6e-1617-4faf-b8c4-f708d1640c8c" heigth=65% width=22%>
