@@ -6,9 +6,8 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: Colors.black,
           appBar: AppBar(
-            backgroundColor: Colors.redAccent,
+            backgroundColor: Colors.black87,
             centerTitle: true,
             leading: const Icon(
               Icons.account_circle_outlined,
@@ -16,7 +15,7 @@ void main() {
               size: 30,
             ),
             title: const Text(
-              'Dark Shadow Button',
+              '',
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 color: Colors.white,
@@ -36,26 +35,19 @@ void main() {
           body: Align(
             alignment: Alignment.center,
             child: Container(
-              alignment: Alignment.center,
-              height: 70,
-              width: 230,
+              alignment: Alignment.topCenter,
+              height: 320,
+              width: 320,
               decoration: BoxDecoration(
-                color: Colors.black,
-                border: Border.all(color: Colors.redAccent, width: 1),
-                boxShadow: const [
-                  BoxShadow(
-                   color: Colors.redAccent,
-                    spreadRadius: 6,
-                    blurRadius: 13,
-                  ),
-                ],
-                borderRadius: BorderRadius.all(Radius.circular(15)),
+                border: Border.all(color: Colors.orange, width: 35),
+                shape: BoxShape.circle,
               ),
-              child: const Text(
-                'Tap',
-                style: TextStyle(
-                  fontSize: 30,
-                  color: Colors.white,
+              child: Container(
+                height: 240,
+                width: 270,
+                decoration: const BoxDecoration(
+                  color: Colors.orange,
+                  shape: BoxShape.circle,
                 ),
               ),
             ),

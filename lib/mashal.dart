@@ -6,9 +6,8 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: Colors.black,
           appBar: AppBar(
-            backgroundColor: Colors.redAccent,
+            backgroundColor: Colors.brown,
             centerTitle: true,
             leading: const Icon(
               Icons.account_circle_outlined,
@@ -16,9 +15,9 @@ void main() {
               size: 30,
             ),
             title: const Text(
-              'Dark Shadow Button',
+              'Mashal',
               style: TextStyle(
-                fontWeight: FontWeight.w600,
+                fontWeight: FontWeight.w800,
                 color: Colors.white,
               ),
             ),
@@ -37,25 +36,20 @@ void main() {
             alignment: Alignment.center,
             child: Container(
               alignment: Alignment.center,
-              height: 70,
-              width: 230,
+              height: 200,
+              width: 150,
               decoration: BoxDecoration(
-                color: Colors.black,
-                border: Border.all(color: Colors.redAccent, width: 1),
-                boxShadow: const [
-                  BoxShadow(
-                   color: Colors.redAccent,
-                    spreadRadius: 6,
-                    blurRadius: 13,
-                  ),
-                ],
-                borderRadius: BorderRadius.all(Radius.circular(15)),
+                color: Colors.brown,
+                border: Border.symmetric(
+                  vertical: BorderSide(color: Colors.white, width: 40),
+                  horizontal: BorderSide(color: Colors.brown.shade400, width: 25),
+                ),
               ),
               child: const Text(
-                'Tap',
+                '🔥',
                 style: TextStyle(
-                  fontSize: 30,
-                  color: Colors.white,
+                  fontSize: 50,
+                  height: -5,
                 ),
               ),
             ),

@@ -44,7 +44,7 @@ void main() {
                 border: Border.all(color: Colors.redAccent, width: 1),
                 boxShadow: const [
                   BoxShadow(
-                   color: Colors.redAccent,
+                    color: Colors.redAccent,
                     spreadRadius: 6,
                     blurRadius: 13,
                   ),

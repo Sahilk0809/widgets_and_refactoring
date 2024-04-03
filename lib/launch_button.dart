@@ -8,7 +8,7 @@ void main() {
         child: Scaffold(
           backgroundColor: Colors.black,
           appBar: AppBar(
-            backgroundColor: Colors.redAccent,
+            backgroundColor: Colors.green,
             centerTitle: true,
             leading: const Icon(
               Icons.account_circle_outlined,
@@ -16,7 +16,7 @@ void main() {
               size: 30,
             ),
             title: const Text(
-              'Dark Shadow Button',
+              'Launch Button',
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 color: Colors.white,
@@ -37,24 +37,24 @@ void main() {
             alignment: Alignment.center,
             child: Container(
               alignment: Alignment.center,
-              height: 70,
-              width: 230,
+              height: 200,
+              width: 200,
               decoration: BoxDecoration(
                 color: Colors.black,
-                border: Border.all(color: Colors.redAccent, width: 1),
-                boxShadow: const [
+                border: Border.all(color: Colors.white, width: 1),
+                boxShadow:  [
                   BoxShadow(
-                   color: Colors.redAccent,
-                    spreadRadius: 6,
-                    blurRadius: 13,
+                    color: Colors.greenAccent.shade700,
+                    spreadRadius: 7,
+                    blurRadius: 15,
                   ),
                 ],
-                borderRadius: BorderRadius.all(Radius.circular(15)),
+                shape: BoxShape.circle,
               ),
               child: const Text(
-                'Tap',
+                'GO',
                 style: TextStyle(
-                  fontSize: 30,
+                  fontSize: 35,
                   color: Colors.white,
                 ),
               ),
