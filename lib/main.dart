@@ -6,9 +6,8 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: Color(0xff48416A),
           appBar: AppBar(
-            backgroundColor: Color(0xff383253),
+            backgroundColor: Colors.blue,
             centerTitle: true,
             leading: const Icon(
               Icons.account_circle_outlined,
@@ -16,9 +15,9 @@ void main() {
               size: 30,
             ),
             title: const Text(
-              'Gradient Button',
+              'An Indian Flag',
               style: TextStyle(
-                fontWeight: FontWeight.w600,
+                fontWeight: FontWeight.w500,
                 color: Colors.white,
               ),
             ),
@@ -33,29 +32,45 @@ void main() {
               ),
             ],
           ),
-          body: Align(
-            alignment: Alignment.center,
+          body: Container(
+            height: double.infinity,
+            width: double.infinity,
+             alignment: Alignment.center,
+             decoration: const BoxDecoration(
+               gradient:
+                 LinearGradient(
+                   colors: [
+                     Color(0xff2293F0),
+                     Color(0xff3E52B6),
+                   ],
+                   begin: Alignment.topCenter,
+                   end: Alignment.bottomCenter,
+                 ),
+             ),
             child: Container(
               alignment: Alignment.center,
-              height: 75,
-              width: 230,
+              height: 170,
+              width: 270,
               decoration: BoxDecoration(
                 color: Colors.white,
                 border: Border.all(color: Colors.white, width: 2),
                 gradient: const LinearGradient(
                     colors: [
-                      Color(0xff942DB4),
-                      Color(0xff2C8BEC),
-                    ]
+                      Colors.deepOrange,
+                      Color(0xffFF7C53),
+                      Colors.white,
+                      Color(0xff419345),
+                      Colors.green,
+                    ],
+                  begin: Alignment.topRight,
+                  end: Alignment.bottomRight,
                 ),
-                borderRadius: const BorderRadius.all(Radius.circular(30)),
               ),
               child: const Text(
-                'Flutter',
+                '',
                 style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.white,
+                  fontSize: 100,
+                  color: Color(0xff00008B),
                 ),
               ),
             ),
