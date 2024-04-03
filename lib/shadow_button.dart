@@ -6,9 +6,8 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: Color(0xff48416A),
           appBar: AppBar(
-            backgroundColor: Color(0xff383253),
+            backgroundColor: Colors.teal,
             centerTitle: true,
             leading: const Icon(
               Icons.account_circle_outlined,
@@ -16,7 +15,7 @@ void main() {
               size: 30,
             ),
             title: const Text(
-              'Gradient Button',
+              'A Shadow Button',
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 color: Colors.white,
@@ -37,25 +36,25 @@ void main() {
             alignment: Alignment.center,
             child: Container(
               alignment: Alignment.center,
-              height: 75,
+              height: 70,
               width: 230,
               decoration: BoxDecoration(
                 color: Colors.white,
-                border: Border.all(color: Colors.white, width: 2),
-                gradient: const LinearGradient(
-                    colors: [
-                      Color(0xff942DB4),
-                      Color(0xff2C8BEC),
-                    ]
-                ),
-                borderRadius: const BorderRadius.all(Radius.circular(30)),
+                border: Border.all(color: Colors.teal, width: 1),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Colors.teal,
+                    spreadRadius: 6,
+                    blurRadius: 13,
+                  ),
+                ],
+                borderRadius: BorderRadius.all(Radius.circular(15)),
               ),
               child: const Text(
-                'Flutter',
+                'Tap',
                 style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.white,
+                  fontSize: 30,
+                  fontWeight: FontWeight.w700,
                 ),
               ),
             ),
