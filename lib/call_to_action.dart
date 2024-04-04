@@ -38,34 +38,39 @@ void main() {
             decoration: const BoxDecoration(
               color: Colors.white,
             ),
-            child: Container(
-              alignment: Alignment.center,
-              height: 90,
-              width: 250,
-              decoration: const BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(Radius.circular(50)),
-                boxShadow: [
-                  BoxShadow(
-                    color: Color(0xffEA4587),
-                    offset: Offset(10, 10),
-                    blurRadius: 30,
-                    spreadRadius: 2,
-                  ),
-                ],
-                gradient: LinearGradient(
-                  colors: [
-                    Color(0xffD64C97),
-                    Color(0xffFF5669),
-                  ],
-                ),
-              ),
-              child: const Text(
-                'Call to action',
-                style: TextStyle(
+            child: GestureDetector(
+              onTap: () {
+                print("Button tapped one time...!");
+              },
+              child: Container(
+                alignment: Alignment.center,
+                height: 90,
+                width: 250,
+                decoration: const BoxDecoration(
                   color: Colors.white,
-                  fontSize: 25,
-                  fontWeight: FontWeight.w500,
+                  borderRadius: BorderRadius.all(Radius.circular(50)),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Color(0xffEA4587),
+                      offset: Offset(10, 10),
+                      blurRadius: 30,
+                      spreadRadius: 2,
+                    ),
+                  ],
+                  gradient: LinearGradient(
+                    colors: [
+                      Color(0xffD64C97),
+                      Color(0xffFF5669),
+                    ],
+                  ),
+                ),
+                child: const Text(
+                  'Call to action',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 25,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
             ),
