@@ -43,11 +43,31 @@ void main() {
                 shape: BoxShape.circle,
               ),
               child: Container(
-                height: 240,
-                width: 270,
+                height: 250,
+                width: 250,
+                alignment: Alignment.center,
                 decoration: const BoxDecoration(
                   color: Colors.orange,
                   shape: BoxShape.circle,
+                  border: BorderDirectional(
+                    bottom: BorderSide(color: Colors.white, width: 20),
+                  ),
+                ),
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  alignment: Alignment.topLeft,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                  ),
+                  child: Container(
+                    height: 80,
+                    width: 80,
+                    decoration: const BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.circle,
+                    ),
+                  ),
                 ),
               ),
             ),
