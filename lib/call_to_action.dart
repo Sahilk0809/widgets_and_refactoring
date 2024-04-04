@@ -7,18 +7,17 @@ void main() {
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.blue,
-            centerTitle: true,
+            backgroundColor: Colors.white,
             leading: const Icon(
               Icons.account_circle_outlined,
-              color: Colors.white,
+              color: Colors.black,
               size: 30,
             ),
             title: const Text(
-              'An Indian Flag',
+              'Call to action',
               style: TextStyle(
                 fontWeight: FontWeight.w500,
-                color: Colors.white,
+                color: Colors.black,
               ),
             ),
             actions: const [
@@ -26,7 +25,7 @@ void main() {
                 padding: EdgeInsets.only(right: 10),
                 child: Icon(
                   Icons.notifications,
-                  color: Colors.white,
+                  color: Colors.black,
                   size: 30,
                 ),
               ),
@@ -37,41 +36,36 @@ void main() {
             width: double.infinity,
             alignment: Alignment.center,
             decoration: const BoxDecoration(
-              gradient:
-              LinearGradient(
-                colors: [
-                  Color(0xff2293F0),
-                  Color(0xff3E52B6),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
+              color: Colors.white,
             ),
             child: Container(
               alignment: Alignment.center,
-              height: 170,
-              width: 270,
-              decoration: BoxDecoration(
+              height: 90,
+              width: 250,
+              decoration: const BoxDecoration(
                 color: Colors.white,
-                border: Border.all(color: Colors.white, width: 2),
-                gradient: const LinearGradient(
+                borderRadius: BorderRadius.all(Radius.circular(50)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color(0xffEA4587),
+                    offset: Offset(10, 10),
+                    blurRadius: 30,
+                    spreadRadius: 2,
+                  ),
+                ],
+                gradient: LinearGradient(
                   colors: [
-                    Colors.deepOrange,
-                    Color(0xffFF7C53),
-                    Colors.white,
-                    Color(0xff419345),
-                    Colors.green,
+                    Color(0xffD64C97),
+                    Color(0xffFF5669),
                   ],
-                  begin: Alignment.topRight,
-                  end: Alignment.bottomRight,
                 ),
               ),
               child: const Text(
-                '|--X--',
+                'Call to action',
                 style: TextStyle(
-                  fontSize: 65,
-                  letterSpacing: -21.5,
-                  color: Color(0xff00008B),
+                  color: Colors.white,
+                  fontSize: 25,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
             ),

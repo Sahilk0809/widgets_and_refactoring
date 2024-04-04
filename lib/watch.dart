@@ -7,15 +7,14 @@ void main() {
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.blue,
-            centerTitle: true,
+            backgroundColor: Color(0xff47436D),
             leading: const Icon(
               Icons.account_circle_outlined,
               color: Colors.white,
               size: 30,
             ),
             title: const Text(
-              'An Indian Flag',
+              'Watch',
               style: TextStyle(
                 fontWeight: FontWeight.w500,
                 color: Colors.white,
@@ -40,8 +39,8 @@ void main() {
               gradient:
               LinearGradient(
                 colors: [
-                  Color(0xff2293F0),
-                  Color(0xff3E52B6),
+                  Color(0xff47436D),
+                  Color(0xff2295F1),
                 ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -49,29 +48,31 @@ void main() {
             ),
             child: Container(
               alignment: Alignment.center,
-              height: 170,
-              width: 270,
-              decoration: BoxDecoration(
+              height: 90,
+              width: 250,
+              decoration: const BoxDecoration(
                 color: Colors.white,
-                border: Border.all(color: Colors.white, width: 2),
-                gradient: const LinearGradient(
+                borderRadius: BorderRadius.all(Radius.circular(40)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color(0xff3A67A1),
+                    blurRadius: 15,
+                    spreadRadius: 10,
+                  ),
+                ],
+                gradient: LinearGradient(
                   colors: [
-                    Colors.deepOrange,
-                    Color(0xffFF7C53),
-                    Colors.white,
-                    Color(0xff419345),
-                    Colors.green,
+                    Color(0xff4D7BB1),
+                    Color(0xff436FA3),
                   ],
-                  begin: Alignment.topRight,
-                  end: Alignment.bottomRight,
                 ),
               ),
               child: const Text(
-                '|--X--',
+                'Flutter',
                 style: TextStyle(
-                  fontSize: 65,
-                  letterSpacing: -21.5,
-                  color: Color(0xff00008B),
+                  color: Colors.white,
+                  fontSize: 25,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
             ),
