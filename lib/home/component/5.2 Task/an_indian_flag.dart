@@ -66,12 +66,11 @@ void main() {
                   end: Alignment.bottomRight,
                 ),
               ),
-              child: const Text(
-                '|--X--',
+              child: Text(
+                '*',
                 style: TextStyle(
-                  fontSize: 65,
-                  letterSpacing: -21.5,
-                  color: Color(0xff00008B),
+                  fontSize: 100,
+                  color: Colors.blue.shade900,
                 ),
               ),
             ),
